@@ -73,7 +73,7 @@ class UserViewSet(ModelViewSet):
             return response.Response(serializer.data,status=status.HTTP_201_CREATED)
            # If serializer is invalid, return errors
         return response.Response({"erro":"new"},serializer.errors,status=status.HTTP_400_BAD_REQUEST)
-    
+    #get all users
     @action(detail=False,methods=['GET'],permission_classes=[IsAuthenticated])
     def GetAllUsers(self,request):
         print(request.user)
