@@ -201,6 +201,5 @@ class ResetPasswordWithOTP(APIView):
 
     
 
-
-    
-    
+class Profile(APIView):
+    pass
