@@ -37,6 +37,7 @@ class UserViewSet(ModelViewSet):
             user.save()
             return response.Response({"users":data},status=status.HTTP_200_OK)
         return response.Response({"details":"invalid details"},status=status.HTTP_400_BAD_REQUEST)
+    #logout view
     @action(detail=False,methods=['POST'],permission_classes=[IsAuthenticated])
     def logout(self,request):
         """Logout user by deleting their auth token"""
