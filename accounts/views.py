@@ -197,10 +197,11 @@ class ResetPasswordWithOTP(APIView):
         return Response({"detail": "Password has been reset successfully."}, status=status.HTTP_200_OK)
 
 
-
-
-    
+class hel():
+    pass
 #Profile view
+
+
 class Profile(APIView):
      def post(self, request):
          return Response(status=status.HTTP_200_OK)
