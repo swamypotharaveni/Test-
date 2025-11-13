@@ -18,7 +18,7 @@ from rest_framework.authtoken.models import Token
 # Create your views here.
 # Create the logger
 logger = logging.getLogger(__name__)
-
+#print
 class UserViewSet(ModelViewSet):
     queryset = User.objects.all()
     serializer_class = UserSerializer
@@ -197,8 +197,9 @@ class ResetPasswordWithOTP(APIView):
         return Response({"detail": "Password has been reset successfully."}, status=status.HTTP_200_OK)
 
 
-class hel():
-    pass
+
+
+    
 #Profile view
 
 
