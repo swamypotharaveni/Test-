@@ -18,7 +18,7 @@ from rest_framework.authtoken.models import Token
 # Create your views here.
 # Create the logger
 logger = logging.getLogger(__name__)
-
+#print
 class UserViewSet(ModelViewSet):
     queryset = User.objects.all()
     serializer_class = UserSerializer
