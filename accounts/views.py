@@ -22,7 +22,7 @@ logger = logging.getLogger(__name__)
 class UserViewSet(ModelViewSet):
     queryset = User.objects.all()
     serializer_class = UserSerializer
-
+#login view
     @action(detail=False,methods=['POST'],permission_classes=[AllowAny,])
     def login(self,request):
         username=request.data.get("username",None)
