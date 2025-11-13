@@ -11,7 +11,7 @@ urlpatterns = [
     path("change_old_password",PasswordChange.as_view(),name="change_password"),
     path("forget_password/",ForgotPasswordOTP.as_view(),name="forget_password"),
     path("reset_password",ResetPasswordWithOTP.as_view(),name="reset_password"),
-    path("Profile/",Profile.as_view(),name="profile")
+    path("Profile/",Profile.as_view(),name="profile"),
     
     
 ]

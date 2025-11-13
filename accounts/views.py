@@ -198,9 +198,12 @@ class ResetPasswordWithOTP(APIView):
 
 
 
-#new changes added
+def testing():
+    pass
     
 #Profile view
+def validateprofile(self):
+    pass
 class Profile(APIView):
      def post(self, request):
          return Response(status=status.HTTP_200_OK)
