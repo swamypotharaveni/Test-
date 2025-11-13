@@ -202,4 +202,5 @@ class ResetPasswordWithOTP(APIView):
     
 
 class Profile(APIView):
-    pass
+     def post(self, request):
+         pass
