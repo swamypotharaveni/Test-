@@ -198,7 +198,8 @@ class ResetPasswordWithOTP(APIView):
 
 
 
-
+def testing():
+    pass
     
 #Profile view
 def validateprofile(self):
