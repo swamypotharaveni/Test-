@@ -206,3 +206,7 @@ def validateprofile(self):
 class Profile(APIView):
      def post(self, request):
          return Response(status=status.HTTP_200_OK)
+
+class ViewProfile(APIView):
+    def get(self,request):
+        return Response(status=status.HTTP_200_OK)
