@@ -203,4 +203,4 @@ class ResetPasswordWithOTP(APIView):
 
 class Profile(APIView):
      def post(self, request):
-         pass
+         return Response(status=status.HTTP_200_OK)
