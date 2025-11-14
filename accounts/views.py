@@ -15,6 +15,7 @@ from.models import Profile
 from django.utils import timezone
 from django.core.mail import send_mail
 from rest_framework.authtoken.models import Token
+from rest_framework import parsers
 # Create your views here.
 # Create the logger
 logger = logging.getLogger(__name__)
@@ -47,7 +48,7 @@ class UserViewSet(ModelViewSet):
         logger.info(f"User '{username}' logged out.")
 
         return response.Response({"detail": "Successfully logged out."}, status=status.HTTP_200_OK)
-    @action(detail=False,methods=['POST'],permission_classes=[AllowAny,])
+    @action(detail=False,methods=['POST'],permission_classes=[AllowAny,],parser_classes=[parsers.MultiPartParser, parsers.FormParser])
     def register(self,request):
          # Get the data from the request
         username=request.data.get("username",None)
