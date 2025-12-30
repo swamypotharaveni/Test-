@@ -1,0 +1,2 @@
+1.Difference Between return and yield in Python
+return sends a value and terminates the function, while yield returns values one by one and pauses the function, making it memory efficient
