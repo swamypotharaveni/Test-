@@ -1,2 +1,22 @@
 1.Difference Between return and yield in Python
 return sends a value and terminates the function, while yield returns values one by one and pauses the function, making it memory efficient
+
+2.What is a Decorator?
+A decorator is a function that modifies another function’s behavior without changing its code.
+def smart_divide(func):
+    def wrapper(a, b):
+        if b == 0:
+            print("Cannot divide by zero")
+            return
+        return func(a, b)
+    return wrapper
+@smart_divide
+def divide(a, b):
+    print(a / b)
+
+divide(10, 0)
+3.what is generates?
+“Generator is a special type of iterator in Python that generates values one by one using yield and does not store the entire data in memory, making it memory efficient.”
+
+
+4.An iterator is a Python object that allows us to iterate over elements one by one using the __iter__() and __next__() methods.
