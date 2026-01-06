@@ -22,3 +22,125 @@ divide(10, 0)
 4.An iterator is a Python object that allows us to iterate over elements one by one using the __iter__() and __next__() methods.
 
 5.“Shallow copy copies only the outer object and shares inner objects with the original, while deep copy copies both outer and inner objects independently.”
+
+
+
+
+PYTHON INTERVIEW QUESTIONS & ANSWERS
+🧱 OOPS (Very Common)
+1️⃣ What is OOPS?
+
+Answer:
+OOPS is a programming paradigm based on classes and objects to achieve code reusability, modularity, and maintainability.
+
+2️⃣ Difference between Class and Object?
+
+Answer:
+A class is a blueprint; an object is an instance of a class.
+
+3️⃣ What is Encapsulation?
+
+Answer:
+Encapsulation is data hiding by restricting direct access to variables using access modifiers.
+
+4️⃣ What is Inheritance?
+
+Answer:
+Inheritance allows a child class to reuse properties and methods of a parent class.
+
+5️⃣ What is Polymorphism?
+
+Answer:
+Polymorphism allows the same method name to behave differently based on the object.
+
+🧵 THREADING
+6️⃣ What is a Thread?
+
+Answer:
+A thread is a lightweight execution unit inside a process that shares the same memory.
+
+7️⃣ When should you use threading?
+
+Answer:
+For I/O-bound tasks like API calls, file reading, and database operations.
+
+8️⃣ Does Python support multithreading?
+
+Answer:
+Yes, but CPU-bound multithreading is limited due to GIL.
+
+🔐 GIL (VERY IMPORTANT)
+9️⃣ What is GIL?
+
+Answer:
+Global Interpreter Lock allows only one thread to execute Python bytecode at a time.
+
+🔟 Why does Python have GIL?
+
+Answer:
+To ensure thread-safe memory management using reference counting.
+
+1️⃣1️⃣ Does GIL affect I/O-bound programs?
+
+Answer:
+No, GIL mainly affects CPU-bound programs.
+
+⚙️ MULTIPROCESSING
+1️⃣2️⃣ What is a Process?
+
+Answer:
+A process is an independent execution unit with its own memory space.
+
+1️⃣3️⃣ Difference between Thread and Process?
+Thread	Process
+Shared memory	Separate memory
+Affected by GIL	Not affected
+Fast	Slower
+Best for I/O	Best for CPU
+1️⃣4️⃣ How do you overcome GIL?
+
+Answer:
+By using the multiprocessing module.
+
+⏸️ time.sleep()
+1️⃣5️⃣ What does time.sleep() do?
+
+Answer:
+It pauses execution of the current thread for a specified number of seconds.
+
+1️⃣6️⃣ Does time.sleep() release GIL?
+
+Answer:
+Yes, during sleep, the GIL is released.
+
+1️⃣7️⃣ Is sleep() blocking?
+
+Answer:
+Yes, it blocks the current thread.
+
+⚡ SCENARIO-BASED QUESTIONS (Final Round)
+1️⃣8️⃣ API calls in parallel?
+
+Answer:
+Use multithreading.
+
+1️⃣9️⃣ Heavy data processing?
+
+Answer:
+Use multiprocessing.
+
+2️⃣0️⃣ Web application design?
+
+Answer:
+Use OOPS for structure, threading for I/O, multiprocessing for CPU-heavy tasks.
+
+🎯 30-Second Confidence Answer (Say This)
+
+“Python supports OOPS for clean design. Threading is best for I/O-bound tasks but is limited by GIL for CPU-bound operations. Multiprocessing achieves true parallelism by bypassing GIL.”
+
+If you want next:
+✅ HR + Technical mixed questions
+✅ Live coding questions
+✅ Tricky Python questions with answers
+
+Just say 👍 😊
